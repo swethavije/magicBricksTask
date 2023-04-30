@@ -1,0 +1,364 @@
+.details-section{
+    background-color:#f1ebeb;
+    // intro
+    .intro{
+        display: flex;
+        justify-content: space-between;
+        p{
+            color:#858484;
+            font-size: 7px;
+        }
+        .rightarrow{
+            font-size: 11px;
+            position: relative;
+            top:3px;
+        }
+    }
+    .details-main{
+        background-color: white;
+        padding: 10px 30px;
+        border-radius: 10px;
+        .houseprice {
+            padding: 10px 10px;
+        h4{
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 5px;
+            margin-top: 0;
+        }
+        .cashback{
+            color: #979292;
+            font-size: 10px;
+            text-decoration-line: underline;
+        }
+         p{
+            margin-top: 0;
+            font-size: 11px;
+            color: #7e7979;
+            font-weight:500;
+        }
+        .drkline{
+            text-decoration-line: underline;
+            color: black;
+            font-size: 12px;
+            font-weight:500;
+        }
+    }
+    .houseimg img{
+        width: 100%;
+        height:auto;
+        border-radius: 6px;
+    }
+    .houseIcons{
+        display: flex;
+        border:1px solid transparent;
+        padding: 5px 15px;
+        background-color: #f4f5f8;
+        
+        .houseFurn{
+            color:#9b9898;
+            font-size: 9px;
+            font-weight: 500;
+            padding: 5px;
+            margin: 0;
+            display: flex;
+        }
+        .furnIcons{
+           position: relative;
+            font-size: 12px;
+            top:1px;
+            margin-right:2px ;
+        }
+        .num{
+            color:black;
+        }
+    }
+   .lightWord{
+     margin-bottom: 0;
+     font-size: 10px;
+     color: #979292;
+   }
+   .darkWord{
+      font-size: 10px;
+      color:black;
+      margin-top: 0;
+      font-weight: 500;
+   }
+   .darkline{
+    text-decoration-line: underline;
+    color: black;
+    font-size: 10px;
+    margin-top: 0;
+    font-weight: 500;
+   }
+   .offercontent{
+    padding-bottom: 10px;
+   }
+   .offWord{
+     color: #979292;
+     font-size: 10px;
+     margin:0;
+     border: 1px solid transparent;
+    padding: 3px 8px;
+    background-color:#fff1e0;
+    border-radius: 20px;
+   }
+   .off{
+    border: 1px solid transparent;
+    background-color: #edd10d;
+    color:black;
+    font-size: 8px;
+    border-radius: 20px;
+    padding: 2px 5px;
+    margin-right: 5px;
+   }
+   
+   .connectWays{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+   }
+   .builderBtn{
+    border: 1px solid transparent;
+    background-color: rgb(196, 18, 18);
+    padding: 6px 10px;
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+    border-radius: 20px;
+    margin-right: 8px;
+   }
+   .siteBtn{
+    border: 1.5px solid rgb(196, 18, 18);
+    padding: 6px 10px;
+    color:rgb(196, 18, 18);
+    font-size: 10px;
+    background-color: transparent;
+    font-weight: 500;
+    border-radius: 20px;
+}
+   #proIcon{
+    color: green;
+    position: relative;
+    top: 6px;
+    font-size: 19px;
+   }
+    }
+    // why buy
+    .whyBuy{
+        margin-top: 10px;
+        background-color: white;
+        padding: 13px 20px;
+        border-radius: 5px;
+        .whyHead{
+            margin: 0;
+            font-size: 15px;
+            color:black;
+            font-weight: 500;
+        }
+        ul{
+            margin:10px;
+        }
+        li{
+            color:#919090;
+            font-size: 12px;
+        }
+        li::marker{
+            color: rgb(28, 27, 27);
+        }
+        .unLine{
+            margin: 0;
+            font-size: 12px;
+            text-decoration-line: underline;
+            font-weight: 500;
+        }
+    }
+    // more details
+    .moreDetail{
+        background-color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 10px;
+        .moreHead{
+            margin: 0;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .lightpara{
+            color: #9b9999;
+            font-size: 11px;
+            font-weight: 500;
+        }
+        .darkpara{
+            color:rgb(50, 50, 50);
+            font-size: 11px;
+            font-weight: 500;
+        }
+        .viewDetails{
+            color:rgb(196, 18, 18);
+            font-size: 13px;
+            font-weight:500 ;
+            text-decoration-line: underline;
+        }
+        .downArrow{
+            position: relative;
+            top:3px;
+            font-size: 14px;
+        }
+        .desp{
+            font-size: 10px;
+            color:#616060;
+            line-height: 15px;
+        }
+        .readmore{
+            color: black;
+            font-size: 10px;
+            font-weight: 500;
+            text-decoration-line: underline;
+        }
+        .builderBtn{
+            border: 1px solid transparent;
+            background-color: rgb(196, 18, 18);
+            padding: 8px 10px;
+            color: white;
+            font-size: 10px;
+            font-weight: 500;
+            border-radius: 20px;
+            margin-right: 8px;
+           }
+    }
+    // Amenties
+    .amenties{
+        background-color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 10px;
+        .amhead{
+            font-size: 14px;
+            margin: 0;
+        }
+        .rowAmenties{
+            display: flex;
+            justify-content: space-between;
+            padding-right: 70px;
+        }
+        .rowAmenties p{
+            color: #858484;
+            font-size: 10px;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+        .amIcons{
+            position: relative;
+            top:2px;
+            font-size: 13px;
+            color:rgb(196, 18, 18);
+            margin-right: 10px;
+        }
+        .amentiesLast{
+            display: flex;
+            margin-top: 10px;
+        }
+        .viewDetails{
+            color:rgb(196, 18, 18);
+            font-size: 11px;
+            font-weight:500 ;
+            text-decoration-line: underline;
+            margin-right: 10px;
+        }
+        .downArrow{
+            position: relative;
+            top:3px;
+            font-size: 13px;
+        }
+        .adownload{
+            text-decoration-line: underline;
+            font-size: 11px;
+            font-weight:500 ;
+
+        }
+        .aupIcon{
+            position: relative;
+            top:2px;
+            font-size: 13px;
+        }
+
+        
+    }
+    // disclamier
+    .Disclaimer{
+        .desp {
+                font-size: 10px;
+                color:#616060;
+                line-height: 15px;
+            }
+            .readmore{
+                color: black;
+                font-size: 10px;
+                font-weight: 500;
+                text-decoration-line: underline;
+            }
+         
+    }
+
+    // details side
+    .details-side{
+        background-color: white;
+        padding: 10px 20px;
+        border-radius: 6px;
+        .contactHead h4{
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        .lightletter{
+            margin-top: 5px;
+            color:#979292;
+            font-size: 8px;
+            font-weight: 500;
+        }
+        #standard-basic{
+            font-size: 12px;
+        }
+        .conbtns{
+            border: 1px solid transparent;
+            background-color: rgb(196, 18, 18);
+            padding: 5px 10px;
+            color: white;
+            font-size: 8px;
+            font-weight: 500;
+            border-radius: 20px;
+            margin-right: 8px;
+
+        }
+        .dotLine{
+            text-decoration-style: dotted;
+        }
+    }
+    .download{
+        background-color: white;
+        padding: 8px 10px;
+        border-radius: 6px;
+        margin-top: 15px;
+        text-align: center;
+       
+    }
+    .downlword{
+        font-size:11px;
+        margin: 0;
+    }
+    #upIcon{
+        position: relative;
+        top:4px;
+        margin-right: 8px;
+        font-size: 15px;
+    }
+
+}
+.lastsection{
+    background-color: #343232;
+    color: #919090;
+    font-size:9px;
+    padding: 5px;
+    text-align: center;
+}

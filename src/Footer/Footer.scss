@@ -1,0 +1,61 @@
+.footer-section{
+    background-color: white;
+    padding: 10px 20px;
+    color: #6b6a6a;
+} 
+
+.aboutContent{
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 500;
+}
+.aboutIcons{
+    display: flex;
+    
+}
+
+        // display: flex;
+        #googleImg{
+            width:20%;
+            height: 70%;
+            border-radius: 20px;
+            margin-right: 10px;
+           
+        }
+        #appImg{
+            width:20%;
+            height: 65%;
+            border-radius: 25px;
+        }
+
+.icons{
+    display: flex;
+    font-size: 12px;
+    margin-left: 30px;
+    .abtIcons{
+       padding: 5px;
+        text-align: center; 
+        color:white;
+        border-radius: 50%;
+        margin-right: 3px;
+        font-size: 15px;
+    }
+}
+
+.prohead{
+    font-size:10px ;
+    color: #3c3b3b;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+.places{
+    font-size: 10px;
+    line-height: 15px;
+    color: #3c3b3b;
+    padding: 2px;
+}
+.line{
+    height: 10px;
+    width: 1px;
+}
+

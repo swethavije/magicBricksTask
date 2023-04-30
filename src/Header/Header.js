@@ -1,5 +1,6 @@
 import React from 'react'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import MenuIcon from '@mui/icons-material/Menu';
 import "./Header.scss"
 function Header() {
   return (
@@ -15,8 +16,11 @@ function Header() {
 
         </div>
         <div className='header-right'>
-        <a href="#">Buy <KeyboardArrowDownIcon className='downArrow'/></a>
+        <a href="#">Login <KeyboardArrowDownIcon className='downArrow'/></a>
         <span className='post'>Post Property <span className='free'>FREE</span></span>
+        <button className='menubtn'>  <MenuIcon style={{fontSize:"12px"}}/></button>
+       
+       
 
         </div>
 

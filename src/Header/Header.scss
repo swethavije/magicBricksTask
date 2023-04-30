@@ -19,7 +19,7 @@
            
         a{
             color:white;
-            font-size: 12px;
+            font-size: 10px;
             padding:15px;
             text-decoration: none;
             position: relative;
@@ -36,7 +36,7 @@
      .header-right{
         a{
             color:white;
-            font-size: 12px;
+            font-size: 10px;
             padding:15px;
             text-decoration: none;
             position: relative;
@@ -64,6 +64,15 @@
                 padding: 1px 3px;
 
             }
+        }
+        .menubtn{
+            background-color: #6d6a6a;
+            border-radius: 50%;
+            text-align: center;
+            color:white;
+            margin-left: 3px;
+            padding: 2px 4px;
+            border: none;
         }
      }
 }

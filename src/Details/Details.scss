@@ -302,11 +302,11 @@
     }
 
     // details side
-    .details-side{
+    .contactHead{
         background-color: white;
         padding: 10px 20px;
         border-radius: 6px;
-        .contactHead h4{
+         h4{
             margin-top: 0;
             margin-bottom: 5px;
             font-size: 14px;
@@ -317,13 +317,20 @@
             font-size: 8px;
             font-weight: 500;
         }
+    }
+        .formFileds{
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+
+        }
         #standard-basic{
             font-size: 12px;
         }
         .conbtns{
             border: 1px solid transparent;
             background-color: rgb(196, 18, 18);
-            padding: 5px 10px;
+            padding: 5px 35px;
             color: white;
             font-size: 8px;
             font-weight: 500;
@@ -332,9 +339,15 @@
 
         }
         .dotLine{
-            text-decoration-style: dotted;
+            border-top: 1px dotted #979292;
         }
-    }
+        .lightletter{
+            margin-top: 5px;
+            color:#979292;
+            font-size: 8px;
+            font-weight: 500;
+        }
+    
     .download{
         background-color: white;
         padding: 8px 10px;

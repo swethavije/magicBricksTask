@@ -193,13 +193,13 @@ function Details() {
   
             <Grid item xs={3}>
                
-            <div className='details-side'>
+            {/* <div className='details-side'> */}
                 <div className='contactHead'>
                     <h4>Contact Builder</h4>
                     <h4>Doshi Housing Team</h4>
                     <p className='lightletter'>-91-81xxxxxxx61</p>
                 </div>
-                <hr className="dotLine"></hr>
+               
                 <div className='formFileds'>
                 <TextField id="standard-basic" placeholder="Your Name" variant="standard" />
                 <TextField id="standard-basic" placeholder="Email" type="email" variant="standard" />
@@ -208,7 +208,7 @@ function Details() {
                 <button className='conbtns'>Get Contact Details</button>
                 </div>
 
-            </div>
+            {/* </div> */}
             <div className='download'>
                 <h4 className='downlword'><UploadFileIcon id="upIcon"/>Download Brochure</h4>
             </div>

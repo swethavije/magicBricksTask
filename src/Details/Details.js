@@ -32,9 +32,9 @@ function Details() {
                     Property ID:63597445 </p>
                 </div>
         <div className='firstpart'>
-        <Grid container spacing={2}>
+        <div className='row'>
             {/* details main display */}
-            <Grid item xs={9}>
+            <div className='col-8'>
             <div className='details-main'>
                 {/* heading */}
                 <div className='houseprice'>
@@ -42,23 +42,23 @@ function Details() {
                 <p>3 BHK 1237 sq-ft Flat For sale <span className='drkline'>Chromepet,Chennai</span></p>
                 </div>
                 {/* img with content */}
-                <Grid container spacing={2}>
+                <div className='row'>
                 
-                <Grid item xs={5}>
+                <div className='col-4'>
                     <div className='houseimg'>
                         <img src={staticDetailImg} alt="staticImg"/>
                     </div>
-                </Grid>
-                <Grid item xs={7}>
+                </div>
+                <div className='col-6'>
                     <div className='houseDetails'>
                        <div className='houseIcons'>
-                        <p className='houseFurn'><SingleBedIcon className='furnIcons'/><span className='num'>3</span>Beds</p><span style={{height:"10px",color:"#ccc"}}>|</span> 
+                        <p className='houseFurn'><SingleBedIcon className='furnIcons'/><span className='num'>3</span>  Beds</p><span style={{height:"10px",color:"#ccc"}}>|</span> 
                         <p className='houseFurn'><BathtubIcon className='furnIcons'/><span className='num'>2</span>Baths</p> <span style={{height:"10px",color:"#ccc"}}>|</span> 
                         <p className='houseFurn'><DirectionsCarIcon className='furnIcons'/><span className='num'>1</span>Covered parking</p><span style={{height:"10px",color:"#ccc"}}>|</span> 
                         <p className='houseFurn'><CurtainsClosedIcon className='furnIcons'/>Unfurnished</p>
                         </div>
-                        <Grid container spacing={2}>
-                        <Grid item xs={4}>
+                        <div className='row'>
+                        <div className='col-3'>
                         <div>
                             <div className='firstdiv'>
                                 <p className='lightWord'>Super Built-Up Area</p>
@@ -73,8 +73,8 @@ function Details() {
                                 <p className='darkWord'>1</p>
                             </div>
                         </div>
-                        </Grid>
-                        <Grid item xs={4}>
+                        </div>
+                        <div className='col-3'>
                         <div>
                             <div className='firstdiv'>
                                 <p className='lightWord'>Developer</p>
@@ -89,8 +89,8 @@ function Details() {
                                 <p className='darkWord'>Unfurnished</p>
                             </div>
                         </div>
-                        </Grid>
-                        <Grid item xs={4}>
+                        </div>
+                        <div className='col-3'>
                         <div>
                             <div className='firstdiv'>
                                 <p className='lightWord'>Project</p>
@@ -105,13 +105,13 @@ function Details() {
                                 <p className='darkWord'>1 covered</p>
                             </div>
                         </div>
-                        </Grid>
-                        </Grid>
+                        </div>
+                        </div>
 
                         
                     </div>
-                </Grid>
-           </Grid>
+                </div>
+           </div>
                 {/* offer */}
                 <div className='offercontent'>
                 <span className='offWord'><span className='off'>OFFER</span>40th Anniversary Offer-save Upto $Lakhs</span>
@@ -123,7 +123,7 @@ function Details() {
                         <button className="siteBtn">Book Site Visit</button>
                     </div>
                     <div className='lastupdate'>
-                        <p className='lightWord' style={{fontSize: '12px',margin:0}}> <Person2Icon id="proIcon"/>  Last contact made 5 days ago</p>
+                        <p className='lightWord' style={{fontSize: '10px',margin:0}}> <Person2Icon id="proIcon"/>  Last contact made 5 days ago</p>
                     </div>
                 </div>
             </div>
@@ -188,10 +188,10 @@ function Details() {
             </div>
             </div>
            
-            </Grid>
+            </div>
               {/* details sidebar */}
   
-            <Grid item xs={3}>
+            <div className='col-3'>
                
             {/* <div className='details-side'> */}
                 <div className='contactHead'>
@@ -213,9 +213,9 @@ function Details() {
                 <h4 className='downlword'><UploadFileIcon id="upIcon"/>Download Brochure</h4>
             </div>
                 
-            </Grid>
+            </div>
             
-        </Grid>
+        </div>
        
         </div>
          {/* disclaimer */}

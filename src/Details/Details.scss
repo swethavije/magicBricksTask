@@ -1,3 +1,78 @@
+// row and col style
+.row{
+	display:flex;
+	flex-wrap:wrap;
+	margin-left:-15px;
+	margin-right:-15px;
+}
+.row >*{
+	width:100%;
+	padding:0 15px;
+}
+.col-1{ 
+      width:8.33%;
+	  padding:0 15px;
+}
+.col-2{ 
+      width:16.66%;
+	  padding:0 15px;
+}
+.col-3{ 
+      width:25%;
+	  padding:0 12px;
+}
+.col-4{ 
+      width:33.33%;
+	  padding:0 15px;
+}
+.col-5{ 
+      width:41.66%;
+	  padding:0 15px;
+}
+.col-6{ 
+      width:50%;
+	  padding:0 15px;
+}
+.col-7{ 
+      width:58.33%;
+	  padding:0 15px;
+}
+.col-8{ 
+      width:66.66%;
+	  padding:0 15px;
+}
+.col-9{ 
+      width:75%;
+	  padding:0 15px;
+}
+.col-10{ 
+      width:83.33%;
+	  padding:0 15px;
+}
+.col-11{ 
+      width:91.66%;
+	  padding:0 15px;
+}
+.col-12{ 
+      width:100%;
+	  padding:0 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .details-section{
     background-color:#f1ebeb;
     // intro
@@ -52,12 +127,12 @@
     .houseIcons{
         display: flex;
         border:1px solid transparent;
-        padding: 5px 15px;
+        padding: 2px 13px;
         background-color: #f4f5f8;
         
         .houseFurn{
             color:#9b9898;
-            font-size: 9px;
+            font-size: 7px;
             font-weight: 500;
             padding: 5px;
             margin: 0;
@@ -66,8 +141,8 @@
         .furnIcons{
            position: relative;
             font-size: 12px;
-            top:1px;
-            margin-right:2px ;
+            top:-1px;
+            margin-right:3px ;
         }
         .num{
             color:black;
@@ -75,11 +150,11 @@
     }
    .lightWord{
      margin-bottom: 0;
-     font-size: 10px;
+     font-size: 8px;
      color: #979292;
    }
    .darkWord{
-      font-size: 10px;
+      font-size: 8px;
       color:black;
       margin-top: 0;
       font-weight: 500;
@@ -140,8 +215,8 @@
    #proIcon{
     color: green;
     position: relative;
-    top: 6px;
-    font-size: 19px;
+    top: 5px;
+    font-size: 17px;
    }
     }
     // why buy

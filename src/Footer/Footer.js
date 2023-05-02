@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Footer.scss"
-import { Container, Grid } from '@mui/material'
+import { Container} from '@mui/material'
 import googleimg from "../assets/google.png"
 import appimg from "../assets/app.jpg"
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
@@ -13,11 +13,11 @@ function Footer() {
   return (
     <div className='footer-section'>
         <Container>
-            <Grid container spacing={2}>
-                <Grid item xs={6}>
+            <div className='row'>
+                <div className='col-5'>
                     <div className='aboutSection'>
                          <p className='aboutHead'>About Magicbricks</p>
-                         <p className='aboutContent'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                         <p className='aboutContent'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                          <div className='aboutIcons'>
                             {/* <div className='store'> */}
                                 <img src={googleimg} alt="google store " id="googleImg"/>
@@ -35,9 +35,9 @@ function Footer() {
                          </div>
                     </div>
 
-                </Grid>
+                </div>
                 {/*  */}
-                <Grid item xs={6}>
+                <div className='col-6'>
                 <div className='propertySection'>
                     <div className='Property'>
                         <p className='prohead'>Property in India
@@ -58,8 +58,8 @@ function Footer() {
                         
                         </div>
                     
-                </Grid>
-            </Grid>
+                </div>
+            </div>
 
         </Container>
    

@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../Header/Header'
 import "./Details.scss"
 import { Container, Grid, TextField } from '@mui/material'
-import staticDetailImg from "../assets/staticDetailsImg.jpeg"
+// import staticDetailImg from "../assets/staticDetailsImg.jpeg"
 import SingleBedIcon from '@mui/icons-material/SingleBed';
 import BathtubIcon from '@mui/icons-material/Bathtub';
 import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
@@ -18,35 +18,49 @@ import DirectionsCarFilledTwoToneIcon from '@mui/icons-material/DirectionsCarFil
 import SecurityTwoToneIcon from '@mui/icons-material/SecurityTwoTone';
 import ChevronRightOutlinedIcon from '@mui/icons-material/ChevronRightOutlined';
 import Footer from '../Footer/Footer'
+import { useSelector } from 'react-redux'
 
 function Details() {
+    const state=useSelector(({data})=>data);
+    // const [detailsArr,setDetails]=useState(state.productDetails);
+    // const detailsArr=state.productDetails;
+    // console.log("detailsArr",detailsArr)
+    
+
   return (
+    // <div>
+    // {state.productDetails.amount}
+    // </div>
+   
+   
     <div>
+
         <Header/>
         <div className='details-section'>
             <Container>
                 {/* above intro */}
                 <div className='intro'>
                     <p>Home <ChevronRightOutlinedIcon className='rightarrow'/> Property for sale in chennai <ChevronRightOutlinedIcon className='rightarrow'/>  Flats for sale in chrompet <ChevronRightOutlinedIcon className='rightarrow'/>  3 BHK flats for sale in chrompet <ChevronRightOutlinedIcon className='rightarrow'/>  12357 sq-ft </p>
-                    <p> Posted on Mar 06,23       
+                    <p> Posted on Mar 06,23    
                     Property ID:63597445 </p>
                 </div>
         <div className='firstpart'>
         <div className='row'>
             {/* details main display */}
             <div className='col-8'>
-            <div className='details-main'>
+                {state.productDetails?.map((item,index)=>
+            <div className='details-main' key={index}>
                 {/* heading */}
                 <div className='houseprice'>
-                <h4>₹ 63.8 Lac <span className='cashback'>Get ₹19.136 cashback on Home Loan</span></h4>
-                <p>3 BHK 1237 sq-ft Flat For sale <span className='drkline'>Chromepet,Chennai</span></p>
+                <h4>{item.amount}<span className='cashback'>Get ₹19.136 cashback on Home Loan</span></h4>
+                <p>{item.space} 1237 sq-ft Flat For sale <span className='drkline'>{item.area},Chennai</span></p>
                 </div>
                 {/* img with content */}
                 <div className='row'>
                 
                 <div className='col-4'>
                     <div className='houseimg'>
-                        <img src={staticDetailImg} alt="staticImg"/>
+                        <img src={item.image} alt="staticImg"/>
                     </div>
                 </div>
                 <div className='col-6'>
@@ -78,7 +92,7 @@ function Details() {
                         <div>
                             <div className='firstdiv'>
                                 <p className='lightWord'>Developer</p>
-                                <p className='darkline'>Doshi Housing</p>
+                                <p className='darkline'>{item.title}</p>
                             </div>
                             <div className='secdiv'>
                                 <p className='lightWord'>Transaction Type</p>
@@ -94,7 +108,7 @@ function Details() {
                         <div>
                             <div className='firstdiv'>
                                 <p className='lightWord'>Project</p>
-                                <p className='darkline'>Doshi FirstNest</p>
+                                <p className='darkline'>{item.name}</p>
                             </div>
                             <div className='secdiv'>
                                 <p className='lightWord'>status</p>
@@ -123,10 +137,10 @@ function Details() {
                         <button className="siteBtn">Book Site Visit</button>
                     </div>
                     <div className='lastupdate'>
-                        <p className='lightWord' style={{fontSize: '10px',margin:0}}> <Person2Icon id="proIcon"/>  Last contact made 5 days ago</p>
+                        <p className='lightWord' style={{fontSize: '15px',margin:0}}> <Person2Icon id="proIcon"/>  Last contact made 5 days ago</p>
                     </div>
                 </div>
-            </div>
+            </div>)}
             {/* why buy section */}
             <div className='whyBuy'>
                 <h3 className='whyHead'>Why buy in this project?</h3>
